@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/aos-master/aos-master/dist/aos.js"></script>
+    <script src="./js/fade-slide-scrolling/fade-slide-scrolling/dist/jqFuwatto.umd.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <title> ENIGME</title>
 </head>
 <body>
@@ -39,6 +45,29 @@
 
     </header>
     <main>
+        <div class="scroll">
+            <div class="left-bar"></div>
+            <div class="mini-left-bar"></div>
+            <div class="social">
+                <img src="./Illustrations/Logo/icon_facebook.png" alt="">
+                <img src="./Illustrations/Logo/icon_instagram.png" alt="">
+                <img src="./Illustrations/Logo/icon_twitter.png" alt="">
+                <img src="./Illustrations/Logo/icon_tiktok.png" alt="">
+
+            </div>
+        </div>
+        <div class="popupbox" id="popupbox">
+            <div class="inside">
+                <h1>TON INITIATION EST <br>TERMINEE</h1>
+                <button>
+                    <h1><a>REVENIR A L'ACCEUIL </a></h1>
+                </button>
+                
+              
+            </div>
+          </div>
+      
+          <!-- fin popupbox  -->
         <section id="heroe">
             <div class="container">
             <div class="hero_page">
@@ -58,7 +87,7 @@
                             l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi
                             et montre-nous que tu es capable de porter les valeurs du Black Panther et du
                             Wakanda !</p>
-                            <!-- <img src="./Illustrations/Enigme/Pantherenigme3.png" alt="image"> -->
+                            <img src="./Illustrations/Enigme/Pantherenigme3.png"  alt="">
 
                     </div>
 
@@ -67,33 +96,36 @@
             </div>
             </div>
 
-        </section id=wakanda>
-        <section>
+        </section >
+        <section id=wakanda>
             <div class="container">
-                <div class="titre">
-                <h2>ENIGME NUMERO 1</h2>
-                <p>Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
-                    et apprend par la même occasion la première valeur d’une Dora Milaje</p>
-                <h2> "SI JE SUIS FIDELE C’EST A CE TRONE
-                    PEU IMPORTE QUI MONTE DESSUS "</h2>
                 
-                </div>
             </div>
 
         </section>
         <section id="forme">
             <div class="container">
                 <div class="forme">
-                    <div class="">
+                    <div class="alphabet">
+                        <div class="titre">
+                            <h2>ENIGME NUMERO 1</h2>
+                            <p>Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
+                                et apprend par la même occasion la première valeur d’une Dora Milaje</p>
+                            <h2 class="h2"> "SI JE SUIS FIDELE C’EST A CE TRONE
+                                PEU IMPORTE QUI MONTE DESSUS "</h2>
+                            
+                            </div>
                        
                         <div class="form">
                             <label for="">Alors, as tu la réponse ?</label><br>
-                            <input type="submit" placeholder="Reponse"><br>
+                            <br>
+                            <input type="text" placeholder="Reponse" id="Reponse"><br>
+                            <span id="invalid"></span>
                             <button>ENVOYER</button>
 
                         </div>
                     </div>
-                    <div class="alphabet">
+                    <div class="savoir">
                         <p>Voici la transicription de l’alphabet </p>
                         <p>A = <span>a</span> ; B = <span>b</span> ; c = <span>c</span>; d =<span>d</span> ; e =<span>e</span> ; f = <span>f</span> ; g = <span>g</span> ; h =<span>h</span>  ; i = <span>i</span> ; j = <span>j</span> ; 
 
@@ -145,6 +177,9 @@
         </div>
 
     </footer>
+    <script src="./js/general.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/validator.js"></script>
     
 </body>
 </html>

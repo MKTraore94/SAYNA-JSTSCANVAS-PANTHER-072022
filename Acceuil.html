@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/aos-master/aos-master/dist/aos.js"></script>
+    <script src="./js/fade-slide-scrolling/fade-slide-scrolling/dist/jqFuwatto.umd.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
     <title>HOME</title>
 </head>
 <body>
@@ -39,6 +46,28 @@
 
     </header>
     <main>
+        <div class="scroll">
+            <div class="left-bar"></div>
+            <div class="mini-left-bar"></div>
+            <div class="social">
+                <img src="./Illustrations/Logo/icon_facebook.png" alt="">
+                <img src="./Illustrations/Logo/icon_instagram.png" alt="">
+                <img src="./Illustrations/Logo/icon_twitter.png" alt="">
+                <img src="./Illustrations/Logo/icon_tiktok.png" alt="">
+
+            </div>
+            <div class="popupbox" id="popupbox">
+                <div class="inside">
+                    <button>
+                        <h1>Message reçu</h1>
+
+                    </button>
+                  
+                </div>
+              </div>
+          
+              <!-- fin popupbox  -->
+        </div>
         <section id="hero">
             <div class="container">
                 <div class="hero">
@@ -50,7 +79,7 @@
                             racisme, la colonisation et les violences contre les afro américains. 
                             Ce film marque tout une génération, c’est 100% africain et c’est parfait .
                         </p>
-                        <a href="#">Voir plus </a>
+                        <a href="#" data-aos-anchor="#naissance" data-aos-anchor-placement="top-center"></a>>Voir plus </a>
 
                     </div>
                     <div class="hero_img">
@@ -147,7 +176,7 @@
                         père, et que le Soldat de l’hiver n’était alors qu’une arme entre les mains de Zemo. Se rendant compte de la supercherie
                         ainsi que de la voie sombre de la vengeance, T’Challa se promet de ne plus permettre aux désirs de vengeance de le
                         consumer à nouveau.</p>
-                    <p>« Quelle est la meilleure façon de protéger le Wakanda ? Je dois devenir un grand roi baba, comme tu l'étais.
+                    <p id="naissance">« Quelle est la meilleure façon de protéger le Wakanda ? Je dois devenir un grand roi baba, comme tu l'étais.
 
                         Tu devras lutter. Pour ça, il te faudra t'entourer de personnes de confiance. Tu es un homme bon, avec un grand
                        coeur. C'est difficile pour un homme bon d'être roi. »
@@ -223,10 +252,11 @@
                 <h2>Contactez nous ! </h2>
                 <form action="">
                     <input type="text" placeholder="Nom"><br>
-                    <input type="email" placeholder="email"><br>
+                    <input type="email" placeholder="email" id="email"><br>
                     <textarea name="" id="" cols="30" rows="10">Message</textarea>
                 </form>
                 <button>ENVOYER</button>
+                <span id="invalid"></span>
                 </div>
 
             </div>
@@ -268,6 +298,9 @@
         </div>
 
     </footer>
+    <script src="./js/general.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/validator.js"></script>
     
 </body>
 </html>
